@@ -13,14 +13,13 @@ Uses the `requests` library.
 ## Usage Example
 
 ```python
-from networkmusic import sonauto
-from networkmusic.sonauto import tags
+from networkmusic.sonauto1 import SonautoApi, tags
 
 # access token obtained from https://sonauto.ai/developers
 token = "sksonauto_012345678901234567890"
 
 # create an object that provides API access
-api = sonauto.SonautoApi(token)
+api = SonautoApi(token)
 
 # pick the four folk genre tags that have been trained the most
 prompt = list(filter(lambda s: s.startswith("folk") or s.endswith("folk"), tags.all))[:4]
