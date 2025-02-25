@@ -3422,8 +3422,7 @@ doom pop
 zombie
 chamarrita rioplatense
 thai
-electronic metal
-""".split('\n'))
+electronic metal""".split('\n'))
 
 
 def _filter(regexp: str) -> tuple[str, ...]:
@@ -3477,3 +3476,172 @@ electronic_psy: tuple[str, ...] = (
 
 
 
+
+vocalists_female: tuple[str, ...] = tuple("""Adele
+Alanis Morissette
+Alessia Cara
+Alicia Keys
+Alison Moyet
+Anastacia
+Anita Baker
+Annie Lennox
+Ariana Grande
+Ashe
+Bananarama
+Barbra Streisand
+Beyoncé
+Billie Eilish
+Billie Holiday
+Bonnie Raitt
+Bonnie Tyler
+Brandi Carlile
+Britney Spears
+Candi Staton
+Carly Simon
+Carrie Underwood
+Celeste
+Céline Dion
+Chaka Khan
+Charli XCX
+Cher
+Cherrelle
+Christina Aguilera
+Christina Perri
+Colbie Caillat
+Cyndi Lauper
+Debbie Harry
+Des'ree
+Diana King
+Diana Ross
+Dido
+Dionne Warwick
+Donna Summer
+Dua Lipa
+Dusty Springfield
+Ella Fitzgerald
+Erykah Badu
+Etta James
+Evanescence
+Giorgia
+Gladys Knight
+Gloria Estefan
+Gloria Gaynor
+Grace Slick
+Gwen Stefani
+Iggy Azalea
+Irene Cara
+Janet Jackson
+Jazmine Sullivan
+Jennifer Paige
+Jennifer Rush
+Jennifer Warnes
+Jewel
+Joan Osborne
+Joni Mitchell
+Joss Stone
+Kacey Musgraves
+Kate Bush
+Katy Perry
+Kelly Clarkson
+Kim Carnes
+Kim Wilde
+Kylie Minogue
+Lady Gaga
+Lana Del Rey
+Lara Fabian
+Laura Branigan
+Lauren Daigle
+Lauryn Hill
+LeAnn Rimes
+Lorde
+Madonna
+Maren Morris
+Mariah Carey
+Mary J. Blige
+Meghan Trainor
+Miley Cyrus
+Minnie Riperton
+Missy Elliott
+Natalie Imbruglia
+Natasha Bedingfield
+Neneh Cherry
+Nina Simone
+Noah Cyrus
+Norah Jones
+Pat Benatar
+Patrice Rushen
+Patti Smith
+Paula Cole
+Peabo Bryson
+Petula Clark
+Ramón
+Regina Belle
+Rita Ora
+Roxette
+Sade
+Sara Bareilles
+Shakira
+Shania Twain
+Sheryl Crow
+Sia
+Sinitta
+Sophie B. Hawkins
+Sophie Ellis-Bextor
+Stevie Nicks
+Suzanne Vega
+Tate McRae
+Taylor Swift
+Tina Turner
+Toni Braxton
+Tori Amos
+Tori Kelly
+Tracy Chapman
+Vanessa Williams
+Whitney Houston
+Zara Larsson
+k.d. lang""".split('\n')
+)
+
+vocalists_male: tuple[str, ...] = tuple("""Andrea Bocelli
+Bobby Darin
+Boy George
+Bruno Mars
+Calum Scott
+Cat Stevens
+Chris Isaak
+Chris Stapleton
+David Allan Coe
+Dean Lewis
+Duncan Laurence
+Ed Sheeran
+Elton John
+Gavin DeGraw
+George Michael
+Gotye
+Hozier
+James Morrison
+Jermaine Stewart
+John Hiatt
+John Legend
+Josh Groban
+Journey
+Keane
+Lewis Capaldi
+Lionel Richie
+Little Feat
+Michael Bolton
+Michael Jackson
+Peter Gabriel
+Phil Collins
+Prince
+Rag'n'Bone Man
+Randy Newman
+Rascal Flatts
+Sam Smith
+Shawn Mendes
+Snow Patrol
+Teddy Swims
+The Kid LAROI
+The Weeknd
+Tom Petty
+Vince Gill""".split('\n'))
