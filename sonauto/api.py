@@ -104,7 +104,7 @@ class Task:
     def fetch_status(self) -> GenerationStatus:
         return self.api.get_status(self.taskid)
 
-    def fect_data(self) -> Data:
+    def fetch_data(self) -> Data:
         return Data(self.api, self.api.get_data_as_json(self.taskid))
 
 
