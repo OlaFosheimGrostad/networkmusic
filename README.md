@@ -14,6 +14,7 @@ Uses the `requests` library.
 
 ```python
 from networkmusic import sonauto
+from networkmusic.sonauto import tags
 
 # access token obtained from https://sonauto.ai/developers
 token = "sksonauto_012345678901234567890"
@@ -22,7 +23,7 @@ token = "sksonauto_012345678901234567890"
 api = sonauto.SonautoApi(token)
 
 # pick the four folk genre tags that have been trained the most
-prompt = list(filter(lambda s: s.startswith("folk") or s.endswith("folk"), sonauto.tags.all))[:4]
+prompt = list(filter(lambda s: s.startswith("folk") or s.endswith("folk"), tags.all))[:4]
 
 print(prompt)
 
