@@ -13,6 +13,8 @@ Uses the `requests` library.
 ## Usage Example
 
 ```python
+from networkmusic import sonauto
+
 # access token obtained from https://sonauto.ai/developers
 token = "sksonauto_012345678901234567890"
 
@@ -25,7 +27,7 @@ prompt = list(filter(lambda s: s.startswith("folk") or s.endswith("folk"), sonau
 print(prompt)
 
 # Generate audio, wait 15 seconds before checking if the track is done
-data = api.generate_polling(poll_delay=15, poll_interval=3, tags=prompt, instrumental=True, seed=1234)
+data = api.generate_polling(poll_delay=15, poll_interval=3, tags=prompt, instrumental=True)
 
 print(data.song_paths)
 ```
