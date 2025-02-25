@@ -3423,7 +3423,7 @@ all: tuple[str] = (
     "zombie",
     "chamarrita rioplatense",
     "thai",
-    "electronic metal"
+    "electronic metal",
 )
 
 
@@ -3465,7 +3465,7 @@ timeperiods: tuple[str] = (
     "eighties",
     "early 1900s",
     "early 1910s",
-    "late 1910s"
+    "late 1910s",
 )
 
 
@@ -3496,7 +3496,7 @@ years: tuple[str] = (
     "2001",
     "1983",
     "1985",
-    "1986"
+    "1986",
 )
 
 jazz: tuple[str] = (
@@ -3574,7 +3574,7 @@ jazz: tuple[str] = (
     "ambient jazz",
     "swing/jazz",
     "cosmic jazz",
-    "mainstream jazz"
+    "mainstream jazz",
 )
 
 swing: tuple[str] = (
@@ -3587,7 +3587,7 @@ swing: tuple[str] = (
     "rnb swing",
     "swingbeat",
     "afroswing",
-    "swing/jazz"
+    "swing/jazz",
 )
 
 soul: tuple[str] = (
@@ -3625,7 +3625,7 @@ soul: tuple[str] = (
     "wassoulou",
     "r b soul",
     "soul music",
-    "soul/r&b"
+    "soul/r&b",
 )
 
 
@@ -3664,7 +3664,7 @@ funk : tuple[str] = (
     "funk mandelão",
     "avant-funk",
     "funknejo",
-    "funk proibidão"
+    "funk proibidão",
 )
 
 
@@ -3736,7 +3736,7 @@ house: tuple[str] = (
     "atlanta bass",
     "disco house",
     "hard beat",
-    "future bounce"
+    "future bounce",
 )
 
 
@@ -3764,7 +3764,7 @@ techno: tuple[str] = (
     "technology",
     "hardcore techno",
     "techno and variations",
-    "dark techno"
+    "dark techno",
 )
 
 trance: tuple[str] = (
@@ -3788,7 +3788,7 @@ trance: tuple[str] = (
     "ibiza trance",
     "hi-tech psytrance",
     "trancestep",
-    "forest psytrance"
+    "forest psytrance",
 )
 
 
@@ -3811,7 +3811,7 @@ vapor: tuple[str] = (
     "vaportrap",
     "vapor",
     "hardvapour",
-    "post-vaporwave"
+    "post-vaporwave",
 )
 
 
@@ -3821,7 +3821,7 @@ classical_old: tuple[str] = (
     "folk baroque",
     "baroque suite",
     "baroque era",
-    "baroque guitar"
+    "baroque guitar",
 )
 
 
@@ -3833,7 +3833,7 @@ norwegian: tuple[str] = (
     "norsk pop",
     "norsk folkemusikk grappa",
     "hardingfele",
-    "norwegian"
+    "norwegian",
 )
 
 
@@ -3915,7 +3915,7 @@ german: tuple[str] = (
     "german folk",
     "german audio play",
     "german audiobook",
-    "deutscher r&b"
+    "deutscher r&b",
 )
 
 
@@ -3927,7 +3927,7 @@ dutch: tuple[str] = (
     "dutch cabaret",
     "dutch folk",
     "dutch",
-    "nederlandstalig"
+    "nederlandstalig",
 )
 
 
@@ -4114,5 +4114,25 @@ vocalists_male: set[str] = {
     "The Kid LAROI",
     "The Weeknd",
     "Tom Petty",
-    "Vince Gill"
+    "Vince Gill",
 }
+
+
+artists_new_wave: set[str] = {
+    "Alison Moyet",
+    "Bananarama",
+    "Blancmange",
+    "Bronski Beat",
+    "Depeche Mode",
+    "Erasure",
+    "General Public",
+    "Kajagoogoo",
+    "Madness",
+    "Men Without Hats",
+    "Missing Persons",
+    "Squeeze",
+    "The Boomtown Rats",
+    "The Motels",
+    "Yazoo",
+}
+
