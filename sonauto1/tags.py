@@ -3622,7 +3622,6 @@ soul: tuple[str] = (
     "soul and r&b",
     "electro soul",
     "underground soul",
-    "wassoulou",
     "r b soul",
     "soul music",
     "soul/r&b",
