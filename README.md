@@ -35,10 +35,12 @@ print(data.song_paths)
 
 ## License
 
+All files in this repository are governed by the following license.
+
 Copyright 2025 Ola Fosheim Grøstad
 
 Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
+you may not use any files in this repository except in compliance with the License.
 You may obtain a copy of the License at
 
 http://www.apache.org/licenses/LICENSE-2.0
