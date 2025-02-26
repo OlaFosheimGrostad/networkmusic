@@ -4112,6 +4112,77 @@ french: tuple[str] = (
 )
 
 
+british: tuple[str] = (
+    "britpop",
+    "london",
+    "united kingdom",
+    "uk bass",
+    "uk hip hop",
+    "uk garage",
+    "british rock",
+    "british folk rock",
+    "uk rap",
+    "post-britpop",
+    "uk pop",
+    "british r&b",
+    "uk drill",
+    "british blues",
+    "uk funky",
+    "manchester",
+    "bristol",
+    "british",
+    "brighton",
+    "british folk",
+    "britfunk",
+    "british invasion",
+    "leeds",
+    "britannique",
+    "uk hardcore",
+    "uk street soul",
+    "birmingham",
+    "sheffield",
+    "liverpool",
+    "british metal",
+    "british dance band",
+    "uk hard house",
+    "newcastle upon tyne",
+    "leicester",
+    "nottingham",
+    "birmingham sound",
+    "new wave of british heavy metal",
+    "britcore",
+    "british brass band"
+)
+
+
+italian: tuple[str] = (
+    "italian",
+    "pop italiano",
+    "rap italiano",
+    "italo-disco",
+    "italo pop",
+    "canzone d'autore",
+    "canzone napoletana",
+    "italy",
+    "italodance",
+    "italian folk",
+    "rome",
+    "italo house",
+    "milan",
+    "indianapolis",
+    "festival di sanremo",
+    "rap napoletano",
+    "italo",
+    "bologna",
+    "italian pop",
+    "in italiano",
+    "jazz/italy",
+    "canzone romana",
+    "brescia",
+    "canzone neomelodica"
+)
+
+
 vocalists_female: set[str] = {
     "Adele",
     "Alanis Morissette",
