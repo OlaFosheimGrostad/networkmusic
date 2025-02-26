@@ -3791,6 +3791,26 @@ trance: tuple[str] = (
 )
 
 
+electro: tuple[str] = (
+    "electro",
+    "electro house",
+    "electro-industrial",
+    "dark electro",
+    "electro-disco",
+    "french electro",
+    "electro swing",
+    "electro-funk",
+    "retro electro",
+    "electro-hop",
+    "electro soul",
+    "electro latino",
+    "electro rock",
+    "synthie/electro-pop",
+    "industrial/electro",
+    "harsh electro"
+)
+
+
 chip: tuple[str] = (
     "chiptune",
     "game music",
@@ -3814,6 +3834,51 @@ vapor: tuple[str] = (
 )
 
 
+psy: tuple[str] = (
+    "psytrance",
+    "psybient",
+    "psychill",
+    "full-on psytrance",
+    "dark psytrance",
+    "psydub",
+    "hi-tech psytrance",
+    "forest psytrance",
+    "psybreaks",
+    "darkpsy"
+)
+
+
+rnb: tuple[str] = (
+    "r&b",
+    "contemporary r&b",
+    "alternative r&b",
+    "rnb/swing",
+    "rhythm and blues",
+    "british r&b",
+    "new orleans r&b",
+    "r b",
+    "r&b/soul",
+    "french r&b",
+    "rnb swing",
+    "pop-r&b",
+    "rnb",
+    "christian r&b",
+    "k-r&b",
+    "hip hop rnb and dance hall",
+    "hiphop/rap/r&b",
+    "soul and r&b",
+    "1990s r&b",
+    "rhythm blues",
+    "r b contemporary",
+    "adult contemporary r&b",
+    "r b soul",
+    "deutscher r&b",
+    "latin r&b",
+    "soul/r&b",
+    "pop/r&b"
+)
+
+
 classical_old: tuple[str] = (
     "baroque",
     "renaissance",
@@ -3825,35 +3890,46 @@ classical_old: tuple[str] = (
 
 
 norwegian: tuple[str] = (
+    "norge",
     "norwegian folk",
     "på norsk",
     "norsk rock",
+    "oslo",
     "norsk rap",
+    "norway",
     "norsk pop",
     "norsk folkemusikk grappa",
     "hardingfele",
-    "norwegian",
+    "norwegian"
 )
 
 
 swedish: tuple[str] = (
+    "sverige",
+    "sweden",
     "swedish folk",
     "svensk rock",
     "svenska",
+    "stockholm",
     "svensk pop",
     "svensk rap",
     "dansbandsmusik",
     "swedish",
+    "gothenburg",
     "dansband",
-    "swedish death metal"
+    "malmö",
+    "swedish death metal",
 )
 
 
 danish: tuple[str] = (
+    "danmark",
+    "copenhagen",
+    "denmark",
     "danish folk",
     "dansktop",
     "på dansk",
-    "danish"
+    "danish",
 )
 
 
@@ -3862,11 +3938,14 @@ finnish: tuple[str] = (
     "finnish folk",
     "finland",
     "suomirock",
+    "helsinki",
     "finnish tango",
+    "lahti",
     "finnish",
     "suomi rap",
     "suomisaundi",
-    "suomi pop"
+    "suomi pop",
+    "tampere",
 )
 
 
@@ -3886,15 +3965,40 @@ nordic: tuple[str] = (
 
 
 arabic: tuple[str] = (
+    "turkish",
+    "orient",
+    "turkish pop",
+    "turkish folk",
     "arabic",
+    "turkish rap",
     "arabic folk",
     "arabic jazz",
     "arabic pop",
     "arabic rap",
+    "turkish classical",
+    "moroccan",
+    "middle east",
+    "moroccan rap",
     "arabic classical",
+    "gnawa",
+    "turkish rock",
+    "turkish trap",
     "arabic bellydance",
+    "turkish mevlevi",
+    "middle eastern",
+    "oriental",
+    "oriental jewish",
     "traditional arabic pop",
-    "levantine arabic"
+    "ancient egyptian",
+    "turkish alternative",
+    "algerian rap",
+    "taarab",
+    "nubian",
+    "kabyle",
+    "algerian chaabi",
+    "tunisian rap - راب تونسي",
+    "levantine arabic",
+    "turkish black sea region folk"
 )
 
 
@@ -3904,44 +4008,109 @@ german: tuple[str] = (
     "auf deutsch",
     "deutschrap",
     "deutschpop",
+    "berlin school",
     "deutschrock",
+    "berlin",
     "deutsch",
     "neue deutsche welle",
     "neue deutsche härte",
     "deutsch punk",
     "deutsche literatur",
+    "hamburg",
     "austrian german",
+    "hamburger schule",
+    "cologne",
+    "munich",
     "german folk",
+    "leipzig",
     "german audio play",
+    "hanover",
     "german audiobook",
+    "frankfurt",
     "deutscher r&b",
+    "düsseldorf"
 )
 
 
 dutch: tuple[str] = (
     "nederland",
     "nederpop",
+    "amsterdam",
+    "netherlands",
+    "rotterdam",
     "nederbeat",
+    "the netherlands",
     "dutch house",
     "dutch cabaret",
     "dutch folk",
+    "utrecht",
     "dutch",
-    "nederlandstalig",
+    "nederlandstalig"
 )
 
 
-psy: tuple[str] = (
-    "psytrance",
-    "psybient",
-    "psychill",
-    "full-on psytrance",
-    "dark psytrance",
-    "psydub",
-    "hi-tech psytrance",
-    "forest psytrance",
-    "psybreaks",
-    "darkpsy"
+french: tuple[str] = (
+    "french",
+    "chanson",
+    "french pop",
+    "french rap",
+    "musique concrete",
+    "french hip hop",
+    "french nouvelle chanson",
+    "quebec",
+    "french variety",
+    "paris",
+    "san francisco",
+    "french rock",
+    "french house",
+    "chanson à texte",
+    "raï",
+    "french horn",
+    "montreal",
+    "french electro",
+    "french r&b",
+    "québec rap",
+    "chanson alternative",
+    "french folk",
+    "french-canadian folk",
+    "francophone",
+    "jazz-in-paris",
+    "lyon",
+    "rap québ",
+    "breton folk",
+    "breton celtic folk",
+    "tragédie en musique",
+    "russian chanson",
+    "marseille",
+    "bordeaux",
+    "french reggae",
+    "genius france",
+    "nantes",
+    "musique concrète instrumentale",
+    "frenchcore",
+    "toulouse",
+    "french melodies",
+    "french caribbean",
+    "rennes",
+    "québécois",
+    "cape breton fiddling",
+    "coupé-décalé",
+    "french touch",
+    "chanson française rétro",
+    "musique pour enfants",
+    "lille",
+    "tumba francesa",
+    "musique militaire",
+    "interprètes de chanson française",
+    "chanson réaliste",
+    "cape breton folk",
+    "opéra-comique",
+    "montreuil",
+    "auvergnat folk",
+    "nouvelle chanson",
+    "french indie"
 )
+
 
 vocalists_female: set[str] = {
     "Adele",
