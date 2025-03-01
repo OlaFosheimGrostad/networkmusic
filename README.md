@@ -80,7 +80,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-### License alternative 2: Apacahe 2.0
+### License alternative 2: Apache 2.0
 All files in this repository are governed by the following license.
 
 Copyright 2025 Ola Fosheim Grøstad
