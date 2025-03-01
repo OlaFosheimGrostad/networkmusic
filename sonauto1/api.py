@@ -1,9 +1,9 @@
 from __future__ import annotations
 from enum import Enum
 from collections.abc import Iterable
+from datetime import datetime
 import logging
 import requests
-from datetime import datetime
 from .exceptions import GenerationError, ServiceError
 from .types import GenerationStatus, ExtendDirection
 
