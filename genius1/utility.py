@@ -26,9 +26,9 @@ class _HtmlStripper(HTMLParser):
 
 
 def strip_lyrics_webpage(html_source: str) -> str:
-    i1 = data.index('>', data.index('<div data-lyrics-container="true" '))
-    i2 = data.index('<div class="LyricsFooter')
-    lyrics_html = data[i1+1:i2]
+    i1 = html_source.index('>', html_source.index('<div data-lyrics-container="true" '))
+    i2 = html_source.index('<div class="LyricsFooter')
+    lyrics_html = html_source[i1+1:i2]
     stripper = _HtmlStripper()
     stripper.feed(lyrics_html)
     return stripper.get_result_as_string()
