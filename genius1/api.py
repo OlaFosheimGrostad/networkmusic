@@ -5,7 +5,7 @@ import logging
 import json
 import requests
 from .exceptions import ServiceError
-
+from .utility import strip_lyrics_webpage
 
 class OperationGet(Enum):
     songlist = 'songlist'
@@ -15,6 +15,35 @@ class SongEntry:
     def __init__(self, api: GeniusApi, json_data: dict):
         self.api = api
         self.json = json_data
+        self._primary_artists_ids: tuple[int, ...] | None = None
+        self._primary_artists: tuple[tuple[int, str], ...] | None = None
+        self._featured_artists: tuple[tuple[int, str], ...] | None = None
+        self._release_date_iso: str | None = None
+
+    @property
+    def primary_artists_ids(self) -> tuple[int, ...]:
+        if self._primary_artists_ids is None:
+            self._primary_artists_ids = tuple(
+                int(e['id']) for e in self.json['primary_artists']
+            )
+        return self._primary_artists_ids
+
+    @property
+    def primary_artists(self) -> tuple[tuple[int, str], ...] :
+        if self._primary_artists is None:
+            self._primary_artists = tuple(
+                (int(e['id']), str(e['name'])) for e in self.json['primary_artists']
+            )
+        return self._primary_artists
+
+    @property
+    def featured_artists(self) -> tuple[tuple[int, str], ...] :
+        if self._featured_artists is None:
+            self._featured_artists = tuple(
+                (int(e['id']), str(e['name'])) for e in self.json['featured_artists']
+            )
+        return self._featured_artists
+
 
     @property
     def id(self) -> int:
@@ -29,16 +58,28 @@ class SongEntry:
         return self.json['lyrics_state'] == 'complete'
 
     @property
-    def release_date(self) -> datetime.date | None:
-        d = self.json.get('release_date_components')
-        if d is not None:
-            return datetime.date(d['year'], d['month'], d['day'])
-        return None
+    def release_date_iso(self) -> str | None:
+        if self._release_date_iso is None:
+            d = self.json.get('release_date_components')
+            if d is not None:
+                if d['month'] is None:
+                    self._release_date_iso = str(d['year'])
+                elif d['day'] is None:
+                    self._release_date_iso = f"{d['year']:04}-{d['month']:02}"
+                else:
+                    self._release_date_iso = f"{d['year']:04}-{d['month']:02}-{d['day']:02}"
+        return self._release_date_iso
 
     @property
     def title(self) -> str:
         return self.json['title']
 
+    def fetch_lyrics(self) -> str:
+        response = requests.get(self.url)
+        if response.status_code != 200:
+            logging.error("GeniusApi: fetch lyrics failed, HTTP Status %d: ", response.status_code, self.url)
+            raise ServiceError()
+        return strip_lyrics_webpage(response.text)
 
 class SongsPage:
     def __init__(self, api: GeniusApi, json: dict):
